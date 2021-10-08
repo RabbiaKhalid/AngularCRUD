@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 import { DataService } from '../data.service';
 @Component({
@@ -8,6 +9,7 @@ import { DataService } from '../data.service';
 })
 export class CrudComponent implements OnInit {
   public apidata=[];
+  public pageSettings: PageSettingsModel={ pageSize: 10};
 
   constructor(private api:DataService) {}
     

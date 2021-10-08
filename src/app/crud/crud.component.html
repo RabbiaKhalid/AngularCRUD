@@ -1,10 +1,10 @@
 <div class='btn-group'>
-    <button id='btn1' style='margin-right:100px' > ADD</button>
+    <button  [routerLink]="['/add']" id='btn1' style='margin-right:100px'>  ADD</button>
     <button id='btn2' style='margin-right:100px'>UPDATE</button>
     <button id='btn3' style='margin-right:100px' >DELETE</button>
 </div>
 <br><br><br>
-<ejs-grid [dataSource]='apidata' >
+<ejs-grid [dataSource]='apidata'  [allowPaging]="true" [pageSettings]='pageSettings' >
     <e-columns>
         <e-column field='id' headerText='ID' textAlign='Left' width=70></e-column>
         <e-column field='employee_name' headerText='Employee Name' textAlign='Left' width=200></e-column>
