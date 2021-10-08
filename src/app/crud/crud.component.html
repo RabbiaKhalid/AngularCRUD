@@ -1,0 +1,14 @@
+<div class='btn-group'>
+    <button id='btn1' style='margin-right:100px' > ADD</button>
+    <button id='btn2' style='margin-right:100px'>UPDATE</button>
+    <button id='btn3' style='margin-right:100px' >DELETE</button>
+</div>
+<br><br><br>
+<ejs-grid [dataSource]='apidata' >
+    <e-columns>
+        <e-column field='id' headerText='ID' textAlign='Left' width=70></e-column>
+        <e-column field='employee_name' headerText='Employee Name' textAlign='Left' width=200></e-column>
+        <e-column field='employee_salary' headerText='Employee Salary' textAlign='Center' width=80></e-column>
+        <e-column field='employee_age' headerText='Employee Age' textAlign='Left' width=90></e-column>
+    </e-columns>
+    </ejs-grid>

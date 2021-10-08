@@ -1,0 +1,15 @@
+#btn1,#btn2,#btn3{
+    display:inline-block;
+}
+.btn-group button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer;
+    float:center; /* Pointer/hand icon */
+    
+  }
+  .btn-group{
+      text-align: center;
+  }
